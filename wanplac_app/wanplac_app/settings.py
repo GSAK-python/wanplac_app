@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'booking',
     'route',
     'user',
-    'wanplac_app'
+    'wanplac_app',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
