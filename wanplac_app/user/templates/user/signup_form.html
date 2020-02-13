@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% block title %} Zarejestruj się {% endblock %}
+
+{% block body %}
+
+<br>
+    <div class="card">
+      <div class="card-body">
+          <h5 class="card-title">Zarejestruj się</h5>
+            <form role="form" method="post">
+                {% csrf_token %}
+                {{signup_form|bootstrap}}
+                <button type="submit" class="btn btn-primary">Zarejestruj się <i class="fas fa-sign-in-alt"></i></button>
+            </form>
+      </div>
+    </div>
+
+{% endblock %}
